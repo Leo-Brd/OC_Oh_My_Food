@@ -57,15 +57,29 @@
 	}
 
 	.cta-btn {
-		background: linear-gradient(180deg, #ec5dc4 0%, #9356dc 100%);
+		background: linear-gradient(180deg, $pink 0%, $purple 100%);
 		color: #fff;
 		border: none;
 		border-radius: 32px;
 		padding: 16px 24px;
 		font-size: 16px;
 		font-weight: 500;
-		box-shadow: 0 2px 8px rgba(147,86,220,0.15);
 		cursor: pointer;
+
+		transition: background 1.5s, box-shadow 0.5s, transform 0.4s;
+		box-shadow: 0 2px 8px rgba(147,86,220,0.15);
+		span {
+			display: inline-block;
+			transition: transform 0.4s;
+		}
+		&:hover {
+			background: linear-gradient(180deg, #f08ad0 0%, #a07ad6 100%);
+			box-shadow: 0 6px 24px rgba(147,86,220,0.22);
+			transform: translateY(2px);
+			span {
+				transform: translateY(2px);
+			}
+		}
 	}
 }
 
@@ -194,12 +208,28 @@
 					}
 				}
 
+
+				// Coeur interactif sans JS
+				.heart-checkbox {
+					display: none;
+				}
 				.restaurant-heart {
 					position: absolute;
 					width: 22px;
 					height: 21px;
 					top: 30%;
 					right: 15px;
+					cursor: pointer;
+					.heart-icon {
+						fill: none;
+						stroke: #101010;
+						transition: fill 0.3s, stroke 0.3s;
+					}
+				}
+				.heart-checkbox:checked + .restaurant-heart .heart-icon path {
+					fill: url(#heart-gradient);
+					stroke: none;
+					transition: fill 0.3s;
 				}
 			}
 		}
