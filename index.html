@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/index.css">
+    
     <title>Oh My Food</title>
 </head>
 <body>
+
+    <header class="main-header">
+        <img src="assets/logos/ohmyfood@2x.svg" alt="Logo Oh My Food" />
+    </header>
+
+    <div class="location-bar">
+        <img src="assets/logos/Logo_location.svg" alt="Localisation" class="location-icon" />
+        <span class="location-text">Paris, Belleville</span>
+    </div>
+
+    <main>
+        <section class="intro">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <button class="cta-btn">Explorer nos restaurants</button>
+        </section>
+
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <span class="step-icon"><img src="assets/logos/phone.svg" alt="Choisissez"/></span>
+                    <span class="step-text">Choisissez un restaurant</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span class="step-icon"><img src="assets/logos/menu.svg" alt="Composez"/></span>
+                    <span class="step-text">Composez votre menu</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-icon"><img src="assets/logos/market.svg" alt="Dégustez"/></span>
+                    <span class="step-text">Dégustez au restaurant</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+
+            <div class="restaurant-list">
+
+                <article class="restaurant-card">
+                    <img src="assets/restaurants/restaurant1.jpg" alt="Restaurant - La palette du goût" class="restaurant-image"/>
+                    <div class="restaurant-badge">Nouveau</div>
+                    <div>
+                        <div>
+                            <h3 class="restaurant-name">La palette du goût</h3>
+                            <p class="restaurant-description">Ménilmontant</p>
+                        </div>
+                        <span></span>
+                    </div>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="assets/restaurants/restaurant1.jpg" alt="Restaurant - La palette du goût" class="restaurant-image"/>
+                    <div class="restaurant-badge">Nouveau</div>
+                    <div>
+                        <div>
+                            <h3 class="restaurant-name">La palette du goût</h3>
+                            <p class="restaurant-description">Ménilmontant</p>
+                        </div>
+                        <span></span>
+                    </div>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="assets/restaurants/restaurant1.jpg" alt="Restaurant - La palette du goût" class="restaurant-image"/>
+                    <div>
+                        <div>
+                            <h3 class="restaurant-name">La palette du goût</h3>
+                            <p class="restaurant-description">Ménilmontant</p>
+                        </div>
+                        <span></span>
+                    </div>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="assets/restaurants/restaurant1.jpg" alt="Restaurant - La palette du goût" class="restaurant-image"/>
+                    <div>
+                        <div>
+                            <h3 class="restaurant-name">La palette du goût</h3>
+                            <p class="restaurant-description">Ménilmontant</p>
+                        </div>
+                        <span></span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
     
 </body>
 </html>

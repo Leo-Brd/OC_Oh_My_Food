@@ -1,0 +1,140 @@
+$white: #F3F3F3;
+$white-green: #99E2D0;
+$green: #008766;
+$white-blue: #89C8FA;
+$blue: #003A68;
+$purple: #9356DC;
+
+body {
+	background: #ffffff;
+	font-family: 'Roboto', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+
+	.main-header {
+		position: relative;
+		box-shadow: 0px 5px 8px rgba(0,0,0,0.10);
+		text-align: center;
+		padding: 22px 0 10px 0;
+		z-index: 50;
+
+        img {
+            width: 162px;
+        }
+	}
+
+	.location-bar {
+		position: relative;
+		background: #eaeaea;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		padding: 16px 0;
+		font-size: 1rem;
+		color: #353535;
+	    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+		z-index: 20;
+    
+		.location-icon {
+			width: 18px;
+			height: 18px;
+			vertical-align: middle;
+			display: inline-block;
+		}
+		.location-text {
+			font-weight: 500;
+			font-size: 16px;
+		}
+	}
+
+	.intro {
+		background: #f6f6f6;
+		text-align: center;
+		padding: 32px 16px 50px 16px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    
+		h1 {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 12px;
+		}
+
+		p {
+			font-size: 18px;
+            font-weight: 300;
+			color: #353535;
+			margin-bottom: 28px;
+		}
+
+		.cta-btn {
+			background: linear-gradient(180deg, #ec5dc4 0%, #9356dc 100%);
+			color: #fff;
+			border: none;
+			border-radius: 32px;
+			padding: 16px 24px;
+			font-size: 16px;
+			font-weight: 500;
+			box-shadow: 0 2px 8px rgba(147,86,220,0.15);
+			cursor: pointer;
+		}
+	}
+
+	.fonctionnement {
+		background: #fff;
+		margin: 50px 0px;
+		border-radius: 0;
+    
+		h2 {
+			font-size: 24px;
+			font-weight: 700;
+			margin: 0 0 24px 16px;
+		}
+
+		.steps {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding: 0 20px 24px 30px;
+      
+			.step {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				background: #f6f6f6;
+				border-radius: 16px;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+				gap: 18px;
+				padding: 25px 0px 25px 35px;
+				position: relative;
+        
+				.step-number {
+					background: $purple;
+					color: #fff;
+					font-size: 14px;
+					font-weight: 500;
+					border-radius: 50%;
+					width: 24px;
+					height: 24px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					position: absolute;
+					left: -12px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				.step-icon {
+					width: 22px;
+					height: 22px;
+					color: #7e7e7e;
+				}
+				.step-text {
+					font-size: 16px;
+					font-weight: 500;
+					color: #000000;
+				}
+			}
+		}
+	}
+}
