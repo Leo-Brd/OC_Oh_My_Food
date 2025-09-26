@@ -4,17 +4,26 @@ body {
   margin: 0;
   padding: 0;
 }
-body .main-header {
+body button {
+  cursor: pointer;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body p {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
   position: relative;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 22px 0 10px 0;
   z-index: 50;
 }
-body .main-header img {
+.main-header img {
   width: 162px;
 }
-body .location-bar {
+
+.location-bar {
   position: relative;
   background: #eaeaea;
   display: flex;
@@ -27,34 +36,35 @@ body .location-bar {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   z-index: 20;
 }
-body .location-bar .location-icon {
+.location-bar .location-icon {
   width: 18px;
   height: 18px;
   vertical-align: middle;
   display: inline-block;
 }
-body .location-bar .location-text {
+.location-bar .location-text {
   font-weight: 500;
   font-size: 16px;
 }
-body .intro {
+
+.intro {
   background: #f6f6f6;
   text-align: center;
   padding: 32px 16px 50px 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
-body .intro h1 {
+.intro h1 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 12px;
 }
-body .intro p {
+.intro p {
   font-size: 18px;
   font-weight: 300;
   color: #353535;
   margin-bottom: 28px;
 }
-body .intro .cta-btn {
+.intro .cta-btn {
   background: linear-gradient(180deg, #ec5dc4 0%, #9356dc 100%);
   color: #fff;
   border: none;
@@ -65,23 +75,24 @@ body .intro .cta-btn {
   box-shadow: 0 2px 8px rgba(147, 86, 220, 0.15);
   cursor: pointer;
 }
-body .fonctionnement {
+
+.fonctionnement {
   background: #fff;
   margin: 50px 0px;
   border-radius: 0;
 }
-body .fonctionnement h2 {
+.fonctionnement h2 {
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 24px 16px;
 }
-body .fonctionnement .steps {
+.fonctionnement .steps {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 0 20px 24px 30px;
 }
-body .fonctionnement .steps .step {
+.fonctionnement .steps .step {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -92,7 +103,7 @@ body .fonctionnement .steps .step {
   padding: 25px 0px 25px 35px;
   position: relative;
 }
-body .fonctionnement .steps .step .step-number {
+.fonctionnement .steps .step .step-number {
   background: #9356DC;
   color: #fff;
   font-size: 14px;
@@ -108,15 +119,113 @@ body .fonctionnement .steps .step .step-number {
   top: 50%;
   transform: translateY(-50%);
 }
-body .fonctionnement .steps .step .step-icon {
+.fonctionnement .steps .step .step-icon {
   width: 22px;
   height: 22px;
   color: #7e7e7e;
 }
-body .fonctionnement .steps .step .step-text {
+.fonctionnement .steps .step .step-text {
   font-size: 16px;
   font-weight: 500;
   color: #000000;
 }
 
-/*# sourceMappingURL=index.css.map */
+.restaurants {
+  background: #F6F6F6;
+  padding: 50px 15px 70px 15px;
+}
+.restaurants h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.restaurants .restaurant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.restaurants .restaurant-list .restaurant-card {
+  position: relative;
+  width: 100%;
+  height: 251px;
+  background: #fff;
+  border-radius: 15px;
+}
+.restaurants .restaurant-list .restaurant-card .restaurant-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurants .restaurant-list .restaurant-card .restaurant-badge {
+  display: flex;
+  justify-content: center;
+  background-color: #99E2D0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  width: 80px;
+  padding: 6px 0;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.restaurants .restaurant-list .restaurant-card .restaurant-infos {
+  position: relative;
+  display: flex;
+  height: 30%;
+}
+.restaurants .restaurant-list .restaurant-card .restaurant-infos .restaurant-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+  gap: 5px;
+}
+.restaurants .restaurant-list .restaurant-card .restaurant-infos .restaurant-left .restaurant-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.restaurants .restaurant-list .restaurant-card .restaurant-infos .restaurant-left .restaurant-location {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurants .restaurant-list .restaurant-card .restaurant-infos .restaurant-heart {
+  position: absolute;
+  width: 22px;
+  height: 21px;
+  top: 30%;
+  right: 15px;
+}
+
+footer {
+  background: #353535;
+  padding: 22px 25px;
+}
+footer .footer-logo {
+  filter: brightness(0) invert(1);
+  width: 110px;
+  margin-bottom: 15px;
+}
+footer .footer-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  gap: 12px;
+}
+footer .footer-item img {
+  width: 11px;
+  height: 13px;
+}
+footer .footer-item p {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+footer .footer-text {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
