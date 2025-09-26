@@ -1,5 +1,6 @@
 @import 'styles.scss';
 
+/* HEADER */
 .main-header {
 	position: relative;
 	box-shadow: 0px 5px 8px rgba(0,0,0,0.10);
@@ -12,6 +13,7 @@
 	}
 }
 
+/* LOCATION BAR */
 .location-bar {
 	position: relative;
 	background: #eaeaea;
@@ -37,6 +39,7 @@
 	}
 }
 
+/* INTRO CONTENT */
 .intro {
 	background: #f6f6f6;
 	text-align: center;
@@ -83,6 +86,7 @@
 	}
 }
 
+/* FONCTIONNEMENT STEPS */
 .fonctionnement {
 	background: #fff;
 	margin: 50px 0px;
@@ -141,6 +145,7 @@
 	}
 }
 
+/* RESTAURANTS LIST */
 .restaurants {
 	background: #F6F6F6;
 	padding: 50px 15px 70px 15px;
@@ -229,13 +234,14 @@
 				.heart-checkbox:checked + .restaurant-heart .heart-icon path {
 					fill: url(#heart-gradient);
 					stroke: none;
-					transition: fill 0.3s;
+					transition: fill 1s;
 				}
 			}
 		}
 	}
 }
 
+/* FOOTER */
 footer {
 	background: #353535;
 	padding: 22px 25px;
@@ -269,5 +275,91 @@ footer {
 		font-weight: 400;
 		font-size: 16px;
 		margin-bottom: 7px;
+	}
+}
+
+
+/*********** MEDIA QUERIES ***********/
+
+
+/* LARGE MODE */
+@media screen and (min-width: 1000px) {
+	
+	.main-header {
+		padding: 26px 0 32px 0;
+
+		img {
+			width: 200px;
+		}
+	}
+
+	.intro {
+		padding: 40px 16px 50px 16px;
+
+		h1 {
+			font-size: 40px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.fonctionnement {
+		padding: 0 250px;
+
+		h2 {
+			margin: 0 0 24px 0px;
+		}
+
+		.steps {
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 40px;
+			padding: 0;
+
+			.step {
+				padding: 25px 70px 25px 35px;
+			}
+		}
+	}
+
+	.restaurants {
+		padding: 40px 250px;
+
+		h2 {
+			margin-bottom: 30px;
+		}
+
+		.restaurant-list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 100px;
+			row-gap: 50px;
+		}
+	}
+
+	footer {
+		display: flex;
+		justify-content: flex-end;
+		align-items:flex-end;
+		gap: 100px;
+		height: 94px;
+		padding: 0 0 20px 0;
+
+		.footer-items {
+			display: flex;
+			gap: 20px;
+		}
+
+		.footer-texts {
+			display: flex;
+			gap: 20px;
+		}
+
+		.footer-logo {
+			order: 10;
+			margin-right: 60px;
+		}
+		.footer-item, .footer-text {
+			order: 1;
+		}
 	}
 }
