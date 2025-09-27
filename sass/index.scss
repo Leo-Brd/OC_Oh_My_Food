@@ -282,12 +282,79 @@ footer {
 /*********** MEDIA QUERIES ***********/
 
 
-/* LARGE MODE */
-@media screen and (min-width: 1000px) {
+/*********** MEDIUM MODE ( TABLETTE ) ***********/
+@media screen and (min-width: 700px) and (max-width: 1440px) {
+	
+	.main-header {
+		padding: 24px 0 24px 0;
+		img { 
+			width: 180px; 
+		}
+	}
+
+	.intro {
+		padding: 36px 16px 50px 16px;
+		h1 { 
+			font-size: 32px; 
+			margin-bottom: 28px; 
+		}
+	}
+
+	.fonctionnement {
+		padding: 0 80px;
+		h2 { 
+			margin: 0 0 24px 0px; 
+		}
+		.steps {
+			flex-direction: row;
+			gap: 28px;
+			padding: 0;
+			.step { padding: 25px 40px 25px 35px; }
+		}
+	}
+	.restaurants {
+		padding: 40px 60px;
+		h2 { 
+			margin-bottom: 24px; 
+		}
+		.restaurant-list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 40px;
+			row-gap: 40px;
+		}
+	}
+	footer {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		gap: 40px;
+		height: 94px;
+		padding: 0 0 20px 10px;
+		.footer-items { 
+			display: flex; 
+			gap: 16px; 
+		}
+		.footer-texts { 
+			display: flex; 
+			gap: 16px; 
+		}
+		.footer-logo { 
+			order: 10; 
+			margin-right: 30px; 
+		}
+		.footer-item, .footer-text { 
+			order: 1; 
+		}
+	}
+}
+
+
+/* LARGE MODE ( DESKTOP ) */
+@media screen and (min-width: 1440px) {
 	
 	.main-header {
 		padding: 26px 0 32px 0;
-
 		img {
 			width: 200px;
 		}
@@ -295,7 +362,6 @@ footer {
 
 	.intro {
 		padding: 40px 16px 50px 16px;
-
 		h1 {
 			font-size: 40px;
 			margin-bottom: 40px;
@@ -304,17 +370,14 @@ footer {
 
 	.fonctionnement {
 		padding: 0 250px;
-
 		h2 {
 			margin: 0 0 24px 0px;
 		}
-
 		.steps {
 			flex-direction: row;
 			justify-content: space-between;
 			gap: 40px;
 			padding: 0;
-
 			.step {
 				padding: 25px 70px 25px 35px;
 			}
@@ -323,11 +386,9 @@ footer {
 
 	.restaurants {
 		padding: 40px 250px;
-
 		h2 {
 			margin-bottom: 30px;
 		}
-
 		.restaurant-list {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -343,17 +404,14 @@ footer {
 		gap: 100px;
 		height: 94px;
 		padding: 0 0 20px 0;
-
 		.footer-items {
 			display: flex;
 			gap: 20px;
 		}
-
 		.footer-texts {
 			display: flex;
 			gap: 20px;
 		}
-
 		.footer-logo {
 			order: 10;
 			margin-right: 60px;
