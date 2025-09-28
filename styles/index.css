@@ -14,8 +14,95 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
 body a {
   text-decoration: none;
   color: inherit;
+  z-index: 50;
+}
+body {
+  /* FOOTER */
+}
+body footer {
+  background: #353535;
+  padding: 22px 25px;
+}
+body footer .footer-logo {
+  filter: brightness(0) invert(1);
+  width: 110px;
+  margin-bottom: 15px;
+}
+body footer .footer-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  gap: 12px;
+}
+body footer .footer-item img {
+  width: 11px;
+  height: 13px;
+}
+body footer .footer-item p {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+body footer .footer-text {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 7px;
 }
 
+/*********** MEDIA QUERIES ***********/
+/*********** MEDIUM MODE ( TABLETTE ) ***********/
+@media screen and (min-width: 700px) and (max-width: 1440px) {
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 40px;
+    height: 94px;
+    padding: 0 0 20px 10px;
+  }
+  footer .footer-items {
+    display: flex;
+    gap: 16px;
+  }
+  footer .footer-texts {
+    display: flex;
+    gap: 16px;
+  }
+  footer .footer-logo {
+    order: 10;
+    margin-right: 30px;
+  }
+  footer .footer-item, footer .footer-text {
+    order: 1;
+  }
+}
+/* LARGE MODE ( DESKTOP ) */
+@media screen and (min-width: 1440px) {
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 100px;
+    height: 94px;
+    padding: 0 0 20px 0;
+  }
+  footer .footer-items {
+    display: flex;
+    gap: 20px;
+  }
+  footer .footer-texts {
+    display: flex;
+    gap: 20px;
+  }
+  footer .footer-logo {
+    order: 10;
+    margin-right: 60px;
+  }
+  footer .footer-item, footer .footer-text {
+    order: 1;
+  }
+}
 /* HEADER */
 .main-header {
   position: relative;
@@ -235,38 +322,6 @@ body a {
   transition: fill 1s;
 }
 
-/* FOOTER */
-footer {
-  background: #353535;
-  padding: 22px 25px;
-}
-footer .footer-logo {
-  filter: brightness(0) invert(1);
-  width: 110px;
-  margin-bottom: 15px;
-}
-footer .footer-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 7px;
-  gap: 12px;
-}
-footer .footer-item img {
-  width: 11px;
-  height: 13px;
-}
-footer .footer-item p {
-  color: white;
-  font-weight: 500;
-  font-size: 16px;
-}
-footer .footer-text {
-  color: white;
-  font-weight: 400;
-  font-size: 16px;
-  margin-bottom: 7px;
-}
-
 /*********** MEDIA QUERIES ***********/
 /*********** MEDIUM MODE ( TABLETTE ) ***********/
 @media screen and (min-width: 700px) and (max-width: 1440px) {
@@ -308,29 +363,6 @@ footer .footer-text {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     row-gap: 40px;
-  }
-  footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 40px;
-    height: 94px;
-    padding: 0 0 20px 10px;
-  }
-  footer .footer-items {
-    display: flex;
-    gap: 16px;
-  }
-  footer .footer-texts {
-    display: flex;
-    gap: 16px;
-  }
-  footer .footer-logo {
-    order: 10;
-    margin-right: 30px;
-  }
-  footer .footer-item, footer .footer-text {
-    order: 1;
   }
 }
 /* LARGE MODE ( DESKTOP ) */
@@ -374,28 +406,5 @@ footer .footer-text {
     grid-template-columns: 1fr 1fr;
     gap: 100px;
     row-gap: 50px;
-  }
-  footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 100px;
-    height: 94px;
-    padding: 0 0 20px 0;
-  }
-  footer .footer-items {
-    display: flex;
-    gap: 20px;
-  }
-  footer .footer-texts {
-    display: flex;
-    gap: 20px;
-  }
-  footer .footer-logo {
-    order: 10;
-    margin-right: 60px;
-  }
-  footer .footer-item, footer .footer-text {
-    order: 1;
   }
 }
