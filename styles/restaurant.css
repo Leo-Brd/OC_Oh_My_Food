@@ -191,8 +191,19 @@ main .restaurant-menu .menu-section .menu-items .menu-item {
   background: white;
   height: 69px;
   border-radius: 15px;
-  padding: 0 15px;
+  padding: 0 0 0 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox {
+  display: none;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-left {
   display: flex;
@@ -204,19 +215,63 @@ main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-left {
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-left h3 {
   font-size: 18px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  transition: max-width 0.3s;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-left p {
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  transition: max-width 0.3s;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-price {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
-  padding-bottom: 10px;
-  width: 10%;
+  padding-bottom: 20px;
+  width: 15%;
+  height: 100%;
   font-weight: 700;
   font-size: 15px;
+  transition: transform 0.3s;
+}
+main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #99E2D0;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: width 0.3s, opacity 0.3s;
+}
+main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-check img {
+  width: 20px;
+  height: 20px;
+}
+main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox:checked ~ .menu-item-label .menu-item-left {
+  max-width: 70%;
+}
+main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox:checked ~ .menu-item-label .menu-item-left p, main .restaurant-menu .menu-section .menu-items .menu-item h3 {
+  max-width: 70%;
+}
+main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox:checked ~ .menu-item-label .menu-item-price {
+  transform: translateX(-20px);
+}
+main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox:checked ~ .menu-item-label .menu-item-check {
+  width: 59px;
+  opacity: 1;
 }
 main .restaurant-menu .cta-container {
   text-align: center;
