@@ -148,7 +148,7 @@ main {
                                 height: 100%;
                                 font-weight: 700;
                                 font-size: 15px;
-                                transition: transform 0.3s;
+                                transition: transform 0.4s;
                             }
 
                             .menu-item-check {
@@ -186,7 +186,8 @@ main {
                             max-width: 70%;
                         }
                         .menu-item-checkbox:checked ~ .menu-item-label .menu-item-price {
-                            transform: translateX(-10px);
+                            transform: translateX(-40px);
+                            width: 30%;
                         }
                         .menu-item-checkbox:checked ~ .menu-item-label .menu-item-check {
                             width: 59px;
@@ -268,14 +269,12 @@ main {
                 .menu-items {
                     .menu-item {
                         .menu-item-label:hover {
-                            .menu-item-price {
-                                width: 10%;
-                            }
                             .menu-item-left {
                                 max-width: 70%;
                             }
                             .menu-item-price {
-                                transform: translateX(-10px);
+                                transform: translateX(-30px);
+                                width: 30%;
                             }
                             .menu-item-check {
                                 width: 59px;
