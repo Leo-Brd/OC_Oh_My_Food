@@ -305,6 +305,54 @@ main .restaurant-menu .cta-container .cta-btn:hover span {
   transform: translateY(2px);
 }
 
+/*********** MEDIA QUERIES ***********/
+/* MEDIUM MODE ( TABLETTE ) */
+@media screen and (min-width: 700px) and (max-width: 1439px) {
+  .main-header {
+    padding: 24px 0 24px 0;
+  }
+  .main-header .main-logo {
+    width: 170px;
+  }
+  main .restaurant-image {
+    height: 320px;
+  }
+  main .restaurant-menu {
+    width: 700px;
+    max-width: 95vw;
+    margin: -40px auto 40px auto;
+    border-radius: 25px;
+    padding: 30px 60px 40px 60px;
+    box-sizing: border-box;
+  }
+  main .restaurant-menu .restaurant-title {
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  main .restaurant-menu .menu-section .menu-items {
+    gap: 18px;
+  }
+  main .restaurant-menu .menu-section .menu-items .menu-item {
+    height: 75px;
+  }
+  main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-left {
+    max-width: 70%;
+  }
+  main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-price {
+    transform: translateX(-25px);
+    width: 25%;
+  }
+  main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-check {
+    width: 59px;
+  }
+  main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-check img {
+    opacity: 1;
+  }
+  main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox {
+    pointer-events: none;
+  }
+}
 /* LARGE MODE ( DESKTOP ) */
 @media screen and (min-width: 1440px) {
   .main-header {

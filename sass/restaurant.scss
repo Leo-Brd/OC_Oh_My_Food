@@ -234,6 +234,68 @@ main {
 }
 
 
+/*********** MEDIA QUERIES ***********/
+
+
+/* MEDIUM MODE ( TABLETTE ) */
+@media screen and (min-width: 700px) and (max-width: 1439px) {
+    .main-header {
+        padding: 24px 0 24px 0;
+        .main-logo {
+            width: 170px;
+        }
+    }
+
+    main {
+        .restaurant-image {
+            height: 320px;
+        }
+
+        .restaurant-menu {
+            width: 700px;
+            max-width: 95vw;
+            margin: -40px auto 40px auto;
+            border-radius: 25px;
+            padding: 30px 60px 40px 60px;
+            box-sizing: border-box;
+            .restaurant-title {
+                justify-content: center;
+                gap: 16px;
+                margin-bottom: 40px;
+            }
+            .menu-section {
+                .menu-items {
+                    gap: 18px;
+                    .menu-item {
+                        height: 75px;
+                        .menu-item-label {
+                            &:hover {
+                                .menu-item-left {
+                                    max-width: 70%;
+                                }
+                                .menu-item-price {
+                                    transform: translateX(-25px);
+                                    width: 25%;
+                                }
+                                .menu-item-check {
+                                    width: 59px;
+                                    img {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                        .menu-item-checkbox {
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 /* LARGE MODE ( DESKTOP ) */
 @media screen and (min-width: 1440px) {
