@@ -354,11 +354,6 @@ body footer .footer-text {
   stroke: #101010;
   transition: fill 0.3s, stroke 0.3s;
 }
-.restaurants .restaurant-list .restaurant-card .restaurant-infos .heart-checkbox:checked + .restaurant-heart .heart-icon path {
-  fill: url(#heart-gradient);
-  stroke: none;
-  transition: fill 1s;
-}
 
 /*********** MEDIA QUERIES ***********/
 /* MEDIUM MODE ( TABLETTE ) */
@@ -384,6 +379,7 @@ body footer .footer-text {
   }
   .fonctionnement .steps {
     flex-direction: row;
+    justify-content: space-between;
     gap: 28px;
     padding: 0;
   }
@@ -446,3 +442,28 @@ body footer .footer-text {
     row-gap: 50px;
   }
 }
+#heart-palette:checked + .restaurant-heart .heart-icon path {
+  fill: url(#heart-gradient-palette);
+  stroke: none;
+  transition: fill 1s;
+}
+
+#heart-note:checked + .restaurant-heart .heart-icon path {
+  fill: url(#heart-gradient-note);
+  stroke: none;
+  transition: fill 1s;
+}
+
+#heart-francaise:checked + .restaurant-heart .heart-icon path {
+  fill: url(#heart-gradient-francaise);
+  stroke: none;
+  transition: fill 1s;
+}
+
+#heart-delice:checked + .restaurant-heart .heart-icon path {
+  fill: url(#heart-gradient-delice);
+  stroke: none;
+  transition: fill 1s;
+}
+
+/*# sourceMappingURL=index.css.map */

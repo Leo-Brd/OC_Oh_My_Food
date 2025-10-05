@@ -199,11 +199,6 @@ main .restaurant-menu .restaurant-title .restaurant-heart .heart-icon {
   stroke: #101010;
   transition: fill 0.3s, stroke 0.3s;
 }
-main .restaurant-menu .restaurant-title .heart-checkbox:checked + .restaurant-heart .heart-icon path {
-  fill: url(#heart-gradient);
-  stroke: none;
-  transition: fill 1s;
-}
 main .restaurant-menu .menu-section {
   margin-bottom: 40px;
 }
@@ -467,6 +462,30 @@ main .restaurant-menu .cta-container .cta-btn:hover span {
 
 .menu-items > .menu-item:nth-child(5) {
   animation-delay: 1.4s;
+}
+
+#heart-palette:checked + .restaurant-heart .heart-icon path {
+  fill: url(#heart-gradient-palette);
+  stroke: none;
+  transition: fill 1s;
+}
+
+#heart-note:checked + .restaurant-heart .heart-icon path {
+  fill: url(#heart-gradient-note);
+  stroke: none;
+  transition: fill 1s;
+}
+
+#heart-francaise:checked + .restaurant-heart .heart-icon path {
+  fill: url(#heart-gradient-francaise);
+  stroke: none;
+  transition: fill 1s;
+}
+
+#heart-delice:checked + .restaurant-heart .heart-icon path {
+  fill: url(#heart-gradient-delice);
+  stroke: none;
+  transition: fill 1s;
 }
 
 /*# sourceMappingURL=restaurant.css.map */

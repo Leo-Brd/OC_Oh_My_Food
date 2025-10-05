@@ -66,11 +66,6 @@ main {
                     transition: fill 0.3s, stroke 0.3s;
                 }
             }
-            .heart-checkbox:checked + .restaurant-heart .heart-icon path {
-                fill: url(#heart-gradient);
-                stroke: none;
-                transition: fill 1s;
-            }
         }
 
         .menu-section {
@@ -375,3 +370,26 @@ main {
 .menu-items > .menu-item:nth-child(3) { animation-delay: 0.8s; }
 .menu-items > .menu-item:nth-child(4) { animation-delay: 1.1s; }
 .menu-items > .menu-item:nth-child(5) { animation-delay: 1.4s; }
+
+
+// Animation coeur pour chaque restaurant
+#heart-palette:checked + .restaurant-heart .heart-icon path {
+    fill: url(#heart-gradient-palette);
+    stroke: none;
+    transition: fill 1s;
+}
+#heart-note:checked + .restaurant-heart .heart-icon path {
+    fill: url(#heart-gradient-note);
+    stroke: none;
+    transition: fill 1s;
+}
+#heart-francaise:checked + .restaurant-heart .heart-icon path {
+    fill: url(#heart-gradient-francaise);
+    stroke: none;
+    transition: fill 1s;
+}
+#heart-delice:checked + .restaurant-heart .heart-icon path {
+    fill: url(#heart-gradient-delice);
+    stroke: none;
+    transition: fill 1s;
+}
