@@ -238,6 +238,7 @@ main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: pointer;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label .menu-item-left {
@@ -245,7 +246,7 @@ main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label .men
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 90%;
+  width: 100%;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label .menu-item-left h3 {
   font-size: 18px;
@@ -266,20 +267,17 @@ main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label .men
   transition: max-width 0.3s;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label .menu-item-price {
+  position: absolute;
+  right: 15px;
+  bottom: 8px;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 20px;
+  justify-content: flex-end;
   width: 15%;
-  height: 100%;
   font-weight: 700;
   font-size: 15px;
   transition: transform 0.4s;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label .menu-item-check {
-  position: absolute;
-  right: 0;
-  top: 0;
   width: 0;
   display: flex;
   align-items: center;
@@ -288,7 +286,7 @@ main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label .men
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: width 0.3s;
+  transition: width 0.4s;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label .menu-item-check img {
   width: 20px;
@@ -300,14 +298,13 @@ main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox {
   display: none;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox:checked ~ .menu-item-label .menu-item-left {
-  max-width: 70%;
+  max-width: 80%;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox:checked ~ .menu-item-label .menu-item-left p, main .restaurant-menu .menu-section .menu-items .menu-item h3 {
-  max-width: 70%;
+  max-width: 80%;
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox:checked ~ .menu-item-label .menu-item-price {
-  transform: translateX(-40px);
-  width: 30%;
+  transform: translateX(-60px);
 }
 main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-checkbox:checked ~ .menu-item-label .menu-item-check {
   width: 59px;
@@ -378,11 +375,11 @@ main .restaurant-menu .cta-container .cta-btn:hover span {
     max-width: 70%;
   }
   main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-price {
-    transform: translateX(-25px);
-    width: 25%;
+    transform: translateX(-60px);
   }
   main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-check {
     width: 59px;
+    right: 0;
   }
   main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-check img {
     opacity: 1;
@@ -422,8 +419,7 @@ main .restaurant-menu .cta-container .cta-btn:hover span {
     max-width: 70%;
   }
   main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-price {
-    transform: translateX(-30px);
-    width: 30%;
+    transform: translateX(-60px);
   }
   main .restaurant-menu .menu-section .menu-items .menu-item .menu-item-label:hover .menu-item-check {
     width: 59px;
@@ -472,3 +468,5 @@ main .restaurant-menu .cta-container .cta-btn:hover span {
 .menu-items > .menu-item:nth-child(5) {
   animation-delay: 1.4s;
 }
+
+/*# sourceMappingURL=restaurant.css.map */
