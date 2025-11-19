@@ -5,7 +5,8 @@ OpenClassrooms React Developer formation : project 3
 
 - It is a restaurant reservation website interface
 - It has been made in "mobile first"
-- There a few animations like a loader, delay appearings or hover effects
+- There are a few animations like a loader, delay appearings or hover effects
+- All the style has been made with Sass
 
 To see the render :
 - [Github Page link](https://leo-brd.github.io/OC_Oh_My_Food/)
